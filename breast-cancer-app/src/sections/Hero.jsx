@@ -3,7 +3,6 @@ import heroImg from "../assets/hero.jpg";
 
 export default function Hero() {
   return (
-    
     <section className="relative overflow-hidden bg-brand-light">
       {/* Big light blob behind the photo (decoration only) */}
       <div className="absolute -bottom-32 -left-24 h-[32rem] w-[32rem] rounded-[63%_37%_54%_46%/55%_48%_52%_45%] bg-white/40" />
@@ -16,9 +15,7 @@ export default function Hero() {
             أكتوبر الوردي 2026
           </span>
 
-          
-            <h1 className="mt-5 text-4xl font-bold leading-[1.4] text-ink md:text-5xl md:leading-[1.4]">
-
+          <h1 className="mt-5 text-4xl font-bold leading-[1.4] text-ink md:text-5xl md:leading-[1.4]">
             كم تعرفين عن <span className="text-brand">سرطان الثدي؟</span>
           </h1>
 
