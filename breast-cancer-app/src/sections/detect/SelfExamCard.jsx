@@ -1,8 +1,9 @@
-import Card from "../../components/Card"
-import Button from "../../components/Button"
-import { selfExamSteps } from "../../data/selfExamSteps"
-import selfExamImg from "../../assets/self-exam.png"
-
+import Card from "../../components/Card";
+import Button from "../../components/Button";
+import { selfExamSteps } from "../../data/selfExamSteps";
+import selfExamImg from "../../assets/self-exam.png";
+import { scrollToSection } from "../../lib/scrollToSection";
+import { SELF_EXAM_VIDEO_URL } from "../../data/links";
 export default function SelfExamCard() {
   return (
     <Card className="mx-auto w-full max-w-5xl p-6 md:p-10">
@@ -26,9 +27,17 @@ export default function SelfExamCard() {
       </div>
 
       <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <Button variant="outline">متى تحتاجين إلى فحص طبي؟</Button>
-        <Button>شاهدي كيف يتم الفحص الذاتي</Button>
+        <Button variant="outline" onClick={() => scrollToSection("notice")}>
+          متى تحتاجين إلى فحص طبي؟
+        </Button>
+        <Button
+          onClick={() =>
+            window.open(SELF_EXAM_VIDEO_URL, "_blank", "noopener,noreferrer")
+          }
+        >
+          شاهدي كيف يتم الفحص الذاتي
+        </Button>
       </div>
     </Card>
-  )
+  );
 }

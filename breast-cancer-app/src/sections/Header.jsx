@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand/10 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-3">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-2">
         {/* RIGHT side: title */}
         <a href="#" className="shrink-0 font-bold text-brand">
           تحدّي الوعي بسرطان الثدي
@@ -20,7 +20,7 @@ export default function Header() {
 
         {/* MIDDLE: links + progress bar */}
         <nav className="min-w-0 flex-1">
-          <ul className="hidden justify-center gap-6 lg:flex">
+          <ul className="hidden justify-center gap-6 text-sm lg:flex">
             {pageSections.map((section) => (
               <li key={section.id}>
                 <a
@@ -37,8 +37,8 @@ export default function Header() {
             ))}
           </ul>
 
-          <div className="mt-1 flex items-center gap-3">
-            <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-brand-light">
+         <div className="mt-0.5 flex items-center gap-3">
+            <div className="h-1 flex-1 overflow-hidden rounded-full bg-brand-light">
               <div
                 className="h-full rounded-full bg-brand transition-[width] duration-150"
                 style={{ width: `${progress}%` }}

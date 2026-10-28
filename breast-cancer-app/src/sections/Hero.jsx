@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import heroImg from "../assets/hero.jpg";
 import useShare from "../hooks/useShare";
+import { scrollToSection } from "../lib/scrollToSection";
 export default function Hero() {
   const { share, copied } = useShare();
   return (
@@ -27,7 +28,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex gap-3">
-            <Button>ابدئي الرحلة</Button>
+            <Button onClick={() => scrollToSection("understand")}>ابدئي الرحلة</Button>
             <Button variant="outline" onClick={share}>
               {copied ? "تم نسخ الرابط ✓" : "انشري الوعي"}
             </Button>
