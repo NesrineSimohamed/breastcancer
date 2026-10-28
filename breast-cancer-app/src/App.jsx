@@ -4,7 +4,7 @@ import MissionNotice from "./sections/MissionNotice"
 import MissionDetect from "./sections/MissionDetect"
 import MissionScreening from "./sections/MissionScreening"
 import MissionAwareness from "./sections/MissionAwareness"
-
+import FinalQuiz from "./sections/FinalQuiz"
 export default function App() {
   return (
     <main>
@@ -14,6 +14,7 @@ export default function App() {
       <MissionDetect />
       <MissionScreening />
       <MissionAwareness />
+      <FinalQuiz />
     </main>
   )
 }
