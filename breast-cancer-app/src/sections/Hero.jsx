@@ -1,7 +1,8 @@
 import Button from "../components/Button";
 import heroImg from "../assets/hero.jpg";
-
+import useShare from "../hooks/useShare";
 export default function Hero() {
+  const { share, copied } = useShare();
   return (
     <section className="relative overflow-hidden bg-brand-light">
       {/* Big light blob behind the photo (decoration only) */}
@@ -27,7 +28,9 @@ export default function Hero() {
 
           <div className="mt-10 flex gap-3">
             <Button>ابدئي الرحلة</Button>
-            <Button variant="outline">انشري الوعي</Button>
+            <Button variant="outline" onClick={share}>
+              {copied ? "تم نسخ الرابط ✓" : "انشري الوعي"}
+            </Button>
           </div>
         </div>
 
