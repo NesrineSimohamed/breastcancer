@@ -1,5 +1,6 @@
-import SectionTitle from "../components/SectionTitle"
-import { warningSigns } from "../data/warningSigns"
+import SectionTitle from "../components/SectionTitle";
+import { warningSigns } from "../data/warningSigns";
+import NumberBadge from "../components/NumberBadge";
 
 export default function MissionNotice() {
   return (
@@ -18,9 +19,7 @@ export default function MissionNotice() {
               key={sign.id}
               className="flex items-center gap-3 rounded-full border border-brand/20 bg-white px-5 py-3 shadow-sm"
             >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-light font-semibold text-brand">
-                {sign.id}
-              </span>
+              <NumberBadge>{sign.id}</NumberBadge>
               <span className="text-ink/80">{sign.text}</span>
             </li>
           ))}
@@ -33,5 +32,5 @@ export default function MissionNotice() {
         </p>
       </div>
     </section>
-  )
+  );
 }
