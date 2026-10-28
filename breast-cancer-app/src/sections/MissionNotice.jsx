@@ -4,7 +4,7 @@ import NumberBadge from "../components/NumberBadge";
 
 export default function MissionNotice() {
   return (
-    <section className="bg-white py-16">
+    <section id="notice" className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle
           tag="المهمة الثانية : الانتباه"

@@ -3,7 +3,8 @@ import UnderstandSlider from "./understand/UnderstandSlider";
 
 export default function MissionUnderstand() {
   return (
-    <section className="bg-brand-light py-16">
+    
+    <section id="understand" className="bg-blush py-16">
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle
           tag="المهمة الأولى : المعرفة"

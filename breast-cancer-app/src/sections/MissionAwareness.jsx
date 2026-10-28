@@ -7,7 +7,7 @@ export default function MissionAwareness() {
   const { share, copied } = useShare()
 
   return (
-    <section className="bg-white py-16">
+    <section id="act" className="bg-white py-16">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-2">
         {/* First in the code = RIGHT side: the text */}
         <div>

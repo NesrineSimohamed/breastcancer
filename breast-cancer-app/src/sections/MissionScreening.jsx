@@ -4,7 +4,7 @@ import ScreeningTypes from "./screening/ScreeningTypes"
 
 export default function MissionScreening() {
   return (
-    <section className="bg-white py-16">
+    <section id="screening" className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle
           tag="المهمة الرابعة : الفحص"

@@ -4,7 +4,7 @@ import SelfExamCard from "./detect/SelfExamCard"
 
 export default function MissionDetect() {
   return (
-    <section className="bg-blush py-16">
+    <section id="detect" className="bg-blush py-16">
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle
           tag="المهمة الثالثة : الكشف المبكر"

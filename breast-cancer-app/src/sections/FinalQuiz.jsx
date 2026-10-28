@@ -41,7 +41,7 @@ export default function FinalQuiz() {
   ]
 
   return (
-    <section className="bg-blush py-16">
+    <section id="quiz" className="bg-blush py-16">
       <div className="mx-auto max-w-6xl px-6">
         <Card className="mx-auto w-full max-w-2xl p-6 md:p-10">
           {/* All screens stacked in one cell: the frame fits the tallest one */}
